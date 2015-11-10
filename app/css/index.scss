@@ -1,0 +1,18 @@
+
+
+@mixin fontFace($family,$src,$style: normal,$weight: normal) {
+	@font-face {
+		font-family: $family;
+		src: url('#{$src}.ttf');
+
+		font-style: $style;
+		font-weight: $weight;
+	}
+}
+$font-stack: 'OpenSans-Bold', sans-serif;
+
+@include fontFace('OpenSans-Bold','fonts/OpenSans-Bold');
+@include fontFace('OpenSans-ExtraBold','fonts/OpenSans-ExtraBold');
+@include fontFace('OpenSans-Regular','fonts/OpenSans-Regular');
+@include fontFace('OpenSans-Semibold','fonts/OpenSans-Semibold');
+$primary-color: red;
