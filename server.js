@@ -1,7 +1,7 @@
 var path = require('path');
 var express = require('express');
 
-var port = process.env.PORT ? process.env.PORT : 3000;
+var port = process.env.PORT ? process.env.PORT : 80;
 var app = express();
 app.use(express.static(__dirname + '/build'));
 
